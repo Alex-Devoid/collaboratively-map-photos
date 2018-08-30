@@ -1,0 +1,38 @@
+<!--
+  Generated template for the LandCam page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Photo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+      <ion-card-header>
+      </ion-card-header>
+      <ion-card-content>
+
+            
+
+                  <ion-input [(ngModel)]="guestName" type="text"
+                    placeholder="Type Description Here">
+                  </ion-input>
+
+
+              <button ion-button (click)="cancel()">
+                cancel
+              </button>
+          <button ion-button color="primary" block (click)="addGuest(guestName)">
+            Post Photo
+          </button>
+          Description:
+
+      </ion-card-content>
+    </ion-card>
+</ion-content>
